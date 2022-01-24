@@ -1,0 +1,31 @@
+    <%- include('partials/header') %>
+            
+    <title>login</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+    
+        <%- include('partials/navbar') %>   
+        
+        <form action="/createPost" method="POST"  enctype="multipart/form-data">
+
+            Title:
+            <input class="form-control" type="text" name="titleofpost"> <br>
+            Upload image:
+            <input class="form-control" type="file" accept=".jpg, .jpeg, .png" name="postImage"> <br>
+            
+            <button type="submit" class="btn btn-primary">Upload</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

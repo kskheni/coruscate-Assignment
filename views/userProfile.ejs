@@ -1,0 +1,32 @@
+    <%- include('partials/header') %>
+        
+    <title>login</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+    
+        <%- include('partials/navbar') %>   
+        <div>
+            Username: <a href="/user/<%= userDetails.username %>" style="color: darkblue; text-decoration: none; font-weight: 600;"><%= userDetails.username %></a><br>
+            Fullname: <%= userDetails.fullName %><br>
+        </div>
+        <% userPosts.forEach(function(post){ %>
+           
+        <%- include('partials/post',{post:post}) %>   
+
+        <% }) %>
+    
+        <br>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+</html>

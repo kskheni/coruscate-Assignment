@@ -1,0 +1,39 @@
+    <%- include('partials/header') %>
+        
+    <title>Register</title>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <%- include('partials/navbar') %>
+        <!-- 
+            a form with fields
+                - full name
+                - unique username
+                - password
+        -->
+
+        <form action="/addNewUser" method="POST">
+
+            Full Name:
+            <input class="form-control" type="text" name="nameofuser"> <br>
+            Username:
+            <input class="form-control" type="text" name="username"> <br>
+            Password:
+            <input class="form-control" type="password" name="password"> <br>
+
+            <button type="submit" class="btn btn-primary">Register</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

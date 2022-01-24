@@ -1,0 +1,9 @@
+<div style="border:2px bisque solid; border-radius: 5px;">
+    Creator: <strong style="color: darkblue;"><a href="/user/<%= post.nameOfCreator %>" 
+        style="color: darkblue; text-decoration: none; font-weight: 600;"><%= post.nameOfCreator %></a></strong><br>
+    <img src=<%= post.imageName %> style="width:100%;" > </br>
+    <%= post.likedBy.length %> likes<br>
+    Title: <%= post.title %>
+
+</div>
+<br>

@@ -19,7 +19,7 @@ It is a social media app, where users can register, login, upload posts.
 3. Navigate to the path where the repository is located in your cmd.
 4. Install all dependencies by running "npm install" or "npm i" into cmd.
 5. Create a file with ".env" name and add 
-              uri = "<add your MongoDB uri here>"
+              uri = _"add your MongoDB uri here"_**
   in it.
 6. Now you are good to go. You can start the server by using "nodemon start"
 
